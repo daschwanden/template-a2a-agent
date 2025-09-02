@@ -48,9 +48,9 @@ async def check_prime(nums: list[int]) -> str:
 
 
 root_agent = Agent(
-    model='gemini-2.0-flash',
-    name='check_prime_agent',
-    description='check prime agent that can check whether numbers are prime.',
+    model='gemini-2.5-flash',
+    name='template_a2a_agent',
+    description='template a2a agent that can check whether numbers are prime.',
     instruction="""
       You check whether numbers are prime.
       When checking prime numbers, call the check_prime tool with a list of integers. Be sure to pass in a list of integers. You should never pass in a string.
